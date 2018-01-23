@@ -27,9 +27,15 @@
 </head>
 
 <script>
+  
+</script>
+
+<script>
 	$('.header').backgroundMove({
 	  movementStrength:'50'
 	});
+
+
 </script>
 
 <style>
@@ -278,27 +284,20 @@
 	</div>
 </div>
 
-<style>
-
-
-
-
-</style>
-
 <div class="container-fluid" id="contact">
 	<div class="container bounceInAnim">
 		<h3 class="text-center blueh3 bounceInAnim">Contact Me</h3>
 		<p class="text-center" style="color: #091D34;"><em>Keep in toutch!</em></p>
 		<div class="row">
 		    <div class="col-sm-12">
-				<form action="addmessage.php" method="POST">
+				<form>
 			  	<div class="form-group">		    
-			    	<input type="text" name="usuario" class="form-control bounceInAnim" placeholder="Name" required>
+			    	<input type="text" id="usuario" class="form-control bounceInAnim" placeholder="Name" required>
 			 	</div>
 			  	<div class="form-group">		    
-			    	<input type="text" name="email" required class="form-control bounceInAnim" placeholder="Email" required="">
+			    	<input type="email" id="email" required class="form-control bounceInAnim" placeholder="Email" required="">
 			  	</div>
-			  	<textarea name="comment" class="form-control bounceInAnim" id="exampleFormControlTextarea1" placeholder="Comment" rows="5" required=""></textarea>	 
+			  	<textarea id="comment" class="form-control bounceInAnim" id="exampleFormControlTextarea1" placeholder="Comment" rows="5" required=""></textarea>	 
 			  	<button id="send" class="btn pull-right bounceInAnim" type="submit">Send</button>
 				</form>
 			</div>		
@@ -306,9 +305,40 @@
 	</div>
 </div>
 
-<style>
+<script>
 
-</style>
+  $("#send").click(function(){
+
+    if ($('#usuario').val()!='' &&  $('#email').val() != '' && $('#comment').val() != '') {
+
+        var usuario = $('#usuario').val();
+        var email = $('#email').val();
+        var comment = $('#comment').val();
+
+        $.post("addmessage.php", {usuario,email,comment}, function( data ) {
+            console.log(data);
+        });
+
+        $("#alert").fadeIn("slow");
+
+        $('#usuario').val('')
+        $('#email').val('')
+        $('#comment').val('')
+
+        }
+  });
+</script>
+
+<div id="alert" class="container-fluid alert alert-success alert-dismissable text-center" style="margin-top: 20px;">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Your message has been sent successfully.
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#alert").hide();
+  });
+</script>
 
 <footer>
 	<div id="faicons" class="container">
@@ -344,6 +374,8 @@
 		</div>
 	</div>
 </footer>
+
+
 
 <script>
 	$('.header').backgroundMove({
