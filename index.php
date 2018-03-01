@@ -12,6 +12,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="script/jquery.backgroundMove.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="script/script.js"></script>
+
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <!-- Jumbo font -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
@@ -24,6 +27,7 @@
   <link rel="stylesheet" href="css/style_common.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <script>
@@ -34,13 +38,10 @@
 	$('.header').backgroundMove({
 	  movementStrength:'50'
 	});
-
-
 </script>
 
-<style>
-	
-</style>
+
+
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="80">
  <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -131,14 +132,14 @@
 	<div class="container">
 		<div class="row">
 			<div id="about1" class="col-sm-4 slideanimright">
-				<p>Olá meu nome é Rafael, sou Técnico em informática e recém  graduado Eng. de Computação. Gosto de trabalhar tanto nas áreas de TI como eletrônica!<p>
+				<p>Olá meu nome é Rafael, sou Engenheiro de Computação e trabalho tanto nas áreas de TI como eletrônica!<p>
 			</div>
 			<div id="about2" class="col-sm-4 slideanimup">
-				<p>Natural de Três de Maio, RS, tive meu primeiro contato com computadores logo aos 9 anos de idade e sempre gostei da "coisa", a partir daí eu era o cara que resolvia os problemas do computador. Com o tempo fui procurando ganhar conhecimento e então fiz o curso técnico em informática na escola junto com o ensino médio. Trabalhei um pouco com design e sistemas e então após um período de muitas dúvídas resolvi entrar para o ensino superior, foi então que prestei vestibular na a Univeridade Federal de Santa Maria para o curso de Bacharel em Engenharia da Computação</p>
-				<p>Na faculdade sempre participei de projetos e laboratórios, aprendi muito sobre sevidores e sistemas operacionais Linux e Mac OS, além é claro de <b>muita programação</b>. Por muito tempo dei suporte a aulas de ensino a distância através da plataforma Moodle. Participei e organizei congressos entre outras atividades extracurriculares.</p>
+				<p>Natural de Três de Maio, RS, tive meu primeiro contato com computadores logo aos 9 anos de idade e sempre gostei da "coisa", a partir daí eu era o cara que resolvia os problemas do computador. Com o tempo fui procurando ganhar conhecimento e então fiz o curso técnico em informática na escola junto com o ensino médio. Trabalhei um pouco com design e sistemas e então após um período de muitas dúvidas resolvi entrar para o ensino superior, foi então que prestei vestibular na a Univeridade Federal de Santa Maria para o curso de Bacharel em Engenharia da Computação</p>
+				<p>Na faculdade sempre participei de projetos e laboratórios, aprendi muito sobre servidores e sistemas operacionais Linux e Mac OS, além é claro de <b>muita programação</b>. Por muito tempo dei suporte a aulas de ensino a distância através da plataforma Moodle. Participei e organizei congressos entre outras atividades extracurriculares.</p>
 				<p>Hoje como muitos sei de tudo um pouco, divido meu tempo de estudo entre programação hardware e web!</p>
 				<p>Desde pequeno sempre gostei do lado do design (talvez no futuro faça alguma especialização na área), por conta disso trabalho com as ferramentas Photoshop e Corel mas dou preferência para o CorelDraw.</p>		
-				<p>Além de habilidades no Fifa e no CounterStrike também tenho bons conhecimentos em programação! C, Java, Javascript, HTML, PHP, SQL são algumas da linguagem que gosto de aprender!</p>
+				<p>Além de habilidades no Fifa e no CounterStrike também tenho bons conhecimentos em programação! C, Java, Javascript, HTML, PHP, SQL são algumas da linguagem que gosto de desenvolver!</p>
 			</div>
 			<div id="about3" class="col-sm-4 slideanimleft">
 				<img src="img/coffee.png ">
@@ -207,7 +208,7 @@
         	</div>
         </div>
         <div class="panel-footer">
-          <h4>Angular</h4>
+          <h4>AngularJS</h4>
           <p>Single page aplication</p>
         </div>
       </div>
@@ -249,37 +250,40 @@
 	<div class="row slideanimright">
 		<div class="col-sm-4 ">
 			<div class="thumbnail">
-				<img src="img/angular.png">
+				<img src="img/projects/gestorPainel.png">
 			</div>
 		</div>
 		<div class="col-sm-8">
-			<h3>Project name</h3>
-			<h4>Layout resume</h4>
-			<p>Project description</p>
+			<h3>Gestor</h3>
+			<h4>Projeto de um sistema ERP</h4>
+			<p>Sistema ERP desenvolvido através da plataforma CakePHP. Possui cadastros de entradas e saídas, clientes e fornecedores, gráficos e etc. Frontend baseado no framework Bootstrap. Mais informações pode-se acompanhar através do meu repositório Github.</p>      
+      <button id="botao" class="btn" data-toggle="modal" data-target="#myModalGestor">Mais Info</button>
 		</div>
 	</div>
 	<div class="row slideanimleft">
 		<div class="col-sm-8">
-			<h3>Project name</h3>
-			<h4>Layout resume</h4>
-			<p>Project description</p>
+			<h3>LazyGame</h3>
+			<h4>Jogo Viral em JavaScript</h4>
+			<p>Jogo viral experimental utilizando JavaScript e AngularJS, o objetivo do jogo é manter o maior tempo possível o botão start apertado enquanto contabiliza o tempo.</p>
+      <button id="botao" class="btn" data-toggle="modal" data-target="#myModalLazy">Mais Info</button>
 		</div>
 		<div class="col-sm-4">			
 			<div class="thumbnail">
-				<img src="img/angular.png">
+				<img src="img/projects/lazyPlay.png">
 			</div>
 		</div>
 	</div>
 	<div class="row slideanimright">
 		<div class="col-sm-4">
 			<div class="thumbnail">
-				<img src="img/angular.png">
+				<img src="img/projects/loremHome.png">
 			</div>
 		</div>
 		<div class="col-sm-8">
-			<h3>Project name</h3>
-			<h4>Layout resume</h4>
-			<p>Project description</p>
+			<h3>Lorem Ipsum Festas</h3>
+			<h4>Layout FrontEnd para site insipirado em Festas</h4>
+			<p>FrontEnd para site inspirado em festas utilizando framework Bootstrap. Conta com script de upload de arquivos/fotos JsFileUploader.</p>      
+      <button id="botao" class="btn" data-toggle="modal" data-target="#myModalLorem">Mais Info</button>
 		</div>
 	</div>
 </div>
@@ -298,47 +302,18 @@
 			    	<input type="email" id="email" required class="form-control bounceInAnim" placeholder="Email" required="">
 			  	</div>
 			  	<textarea id="comment" class="form-control bounceInAnim" id="exampleFormControlTextarea1" placeholder="Comment" rows="5" required=""></textarea>	 
-			  	<button id="send" class="btn pull-right bounceInAnim" type="submit">Send</button>
+			  	<button id="botao" class="btn pull-right bounceInAnim" type="submit">Send</button>
 				</form>
 			</div>		
 		</div>
 	</div>
 </div>
 
-<script>
-
-  $("#send").click(function(){
-
-    if ($('#usuario').val()!='' &&  $('#email').val() != '' && $('#comment').val() != '') {
-
-        var usuario = $('#usuario').val();
-        var email = $('#email').val();
-        var comment = $('#comment').val();
-
-        $.post("addmessage.php", {usuario,email,comment}, function( data ) {
-            console.log(data);
-        });
-
-        $("#alert").fadeIn("slow");
-
-        $('#usuario').val('')
-        $('#email').val('')
-        $('#comment').val('')
-
-        }
-  });
-</script>
 
 <div id="alert" class="container-fluid alert alert-success alert-dismissable text-center" style="margin-top: 20px;">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Success!</strong> Your message has been sent successfully.
 </div>
-
-<script>
-  $(document).ready(function(){
-    $("#alert").hide();
-  });
-</script>
 
 <footer>
 	<div id="faicons" class="container">
@@ -376,87 +351,171 @@
 </footer>
 
 
+<!-- Modal Gestor -->
+<div id="myModalGestor" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
 
-<script>
-	$('.header').backgroundMove({
-	  movementStrength:'30'
-	});
-</script>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Gestor</h4>
+      </div>
+      <div class="modal-body">
+        <!--Carousel-->
 
-<script>
-$(document).ready(function(){
+        <div id="myCarouselGestor" class="carousel slide" data-ride="carousel">          
 
-  $(".navbar a, footer a[href='#myPage'] , #begin a , #topo").on('click', function(event) {
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/projects/gestorPainel.png" alt="Painel Gestor">
+            </div>
 
-  if (this.hash !== "") {
+            <div class="item">
+              <img src="img/projects/gestorClientes.png" alt="Clientes Gestor">
+            </div>
 
-    event.preventDefault(); 
+            <div class="item">
+              <img src="img/projects/gestorSaidas.png" alt="Saidas Gestor">
+            </div>
 
-    var hash = this.hash;
+            <div class="item">
+              <img src="img/projects/gestorSaidas2.png" alt="Saidas Gestor">
+            </div>
+          </div>
 
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarouselGestor" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarouselGestor" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Próxima</span>
+          </a>
+        </div>
 
-      window.location.hash = hash;
-      });
-    }
-  });
-})
-</script>
+        <!--EndCarousel-->
+      </div>
+      <div class="modal-footer">
+        <button id="botao" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
 
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+  </div>
+</div>
 
-<script>
 
-	$(window).scroll(function() {
-  $(".slideanimup").each(function(){
-    var pos = $(this).offset().top;
+<!-- Modal LoremIpsumFestas -->
+<div id="myModalLorem" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slideup");
-    }
-  });
-}); 	
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Lorem Ipsum Festas</h4>
+      </div>
+      <div class="modal-body">
+        <!--Carousel-->
 
-	$(window).scroll(function() {
-  $(".slideanimright").each(function(){
-    var pos = $(this).offset().top;
+        <div id="myCarouselLorem" class="carousel slide" data-ride="carousel">          
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slideright");
-    }
-  });
-}); 	
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/projects/loremHome.png" alt="Lorem Home">
+            </div>
 
-	$(window).scroll(function() {
-  $(".slideanimleft").each(function(){
-    var pos = $(this).offset().top;
+            <div class="item">
+              <img src="img/projects/loremFestas.png" alt="Lorem Festas">
+            </div>
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slideleft");
-    }
-  });
-}); 
+            <div class="item">
+              <img src="img/projects/loremFotos.png" alt="Lorem Fotos">
+            </div>
 
-	$(window).scroll(function() {
-  $(".bounceInAnim").each(function(){
-    var pos = $(this).offset().top;
+            <div class="item">
+              <img src="img/projects/loremContato.png" alt="Lorem Contato">
+            </div>
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 800) {
-      $(this).addClass("bounceIn");
-    }
-  });
-}); 		
+            <div class="item">
+              <img src="img/projects/loremJsFileUploader.png" alt="Lorem JsFileUploader">
+            </div>
+          </div>
 
-</script>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarouselLorem" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarouselLorem" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Próxima</span>
+          </a>
+        </div>
+
+        <!--EndCarousel-->
+      </div>
+      <div class="modal-footer">
+        <button id="botao" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal LazyGame -->
+<div id="myModalLazy" class="modal fade " role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">LazyGame</h4>
+      </div>
+      <div class="modal-body">
+        <!--Carousel-->
+
+        <div id="myCarouselLazy" class="carousel slide" data-ride="carousel">          
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/projects/lazyPlay.png" alt="Lazy Play">
+            </div>
+
+            <div class="item">
+              <img src="img/projects/lazyRanking.png" alt="Lazy Rankinkg">
+            </div>
+
+            <div class="item">
+              <img src="img/projects/lazyAbout.png" alt="Lazy About">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarouselLazy" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarouselLazy" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Próxima</span>
+          </a>
+        </div>
+
+        <!--EndCarousel-->
+      </div>
+      <div class="modal-footer">
+        <button id="botao" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 </html> 

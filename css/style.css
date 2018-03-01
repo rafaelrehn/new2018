@@ -1,4 +1,4 @@
-body{
+	body{
 		background-image: url(../img/background.jpg);
 
 		background-size: 100% 100%;
@@ -247,13 +247,13 @@ body{
 		background-color: #E1ECF9;
 	}
 	/* #E1ECF9 #609CE1 #236AB9 #133863 #091D34 */
-	#send{
+	#botao{
 		margin: 5PX 0;
 		background: #091D34;
 		color: #E1ECF9;
 		transition: all 0.2s ease-in-out;
 	}
-	#send:hover{
+	#botao:hover{
 		background: white;
 		color: #091D34;
 		border-color: #091D34;
@@ -336,6 +336,32 @@ body{
 	}
 		#topo:hover{
 				color: #236AB9;		
+	}
+  
+	.modal-backdrop {
+		z-index: 100000 !important;
+	}
+
+	.modal {
+		z-index: 100001 !important;
+	}	
+
+	.carousel-control.right, .carousel-control.left {
+		background-image: none;
+		color: #091D34;
+	}
+	
+	.modal-header{
+		background-color: #091D34;
+		color: #E1ECF9;
+	}
+
+	.modal-content{
+		background-color: #E1ECF9;
+	}
+
+	.close{
+		color: white;
 	}
 
 		/* #E1ECF9 #609CE1 #236AB9 #133863 #091D34 */
